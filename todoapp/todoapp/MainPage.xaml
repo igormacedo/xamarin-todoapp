@@ -17,7 +17,8 @@
         
         <Button Text="Ok"
                 BackgroundColor="Red"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"
+                />
     
     </StackLayout>
 
