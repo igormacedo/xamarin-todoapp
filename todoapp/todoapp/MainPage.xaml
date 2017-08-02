@@ -7,10 +7,18 @@
     <StackLayout>
         <Label Text="Oi mundo!"
                HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
-        <Entry Placeholder="Nome"/>
-        <Switch/>
-        <Button Text="Ok"/>
+               VerticalTextAlignment="Center"
+               FontSize="Large"/>
+        
+        <Entry Placeholder="Nome"
+               VerticalOptions="Center"/>
+        
+        <Switch HorizontalOptions="Center"/>
+        
+        <Button Text="Ok"
+                BackgroundColor="Red"
+                Clicked="Button_Clicked"/>
+    
     </StackLayout>
 
 </ContentPage>
