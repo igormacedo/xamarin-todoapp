@@ -17,7 +17,6 @@ namespace todoapp
         private void Button_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alerta!", "Cuidado", "#foratemer!");
-            Navigation.PushAsync(new Page1());
         }
     }
 }

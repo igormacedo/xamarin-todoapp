@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="todoapp.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hey, you there!"
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+
+            <Label Text="Welcome to my"
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Start"
+                   Font="Bold,20"/>
+
+            <Label Text="Xamarin App"
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="End"
+                   Font="50"/>
+
+            <Entry x:Name="username_entry"
+                   Placeholder="username"
+                   WidthRequest="200"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            
+            <Entry x:Name="password_entry"
+                   Placeholder="password"
+                   WidthRequest="200"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+            <Button x:Name="login_button"
+                    Text="Log In"
+                    BackgroundColor="#1E88E5"
+                    Clicked="login_button_Clicked"
+                    WidthRequest="200"/>
+
+            <Label Text="You don't have an account?"
+                   VerticalTextAlignment="End"
+                   HorizontalOptions="Center"/>
+            
+            <Button x:Name="signup_button"
+                    Text="Sign up NOW!"
+                    BackgroundColor="#E3F2FD"
+                    WidthRequest="200"
+                    VerticalOptions="End"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

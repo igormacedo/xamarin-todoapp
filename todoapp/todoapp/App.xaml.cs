@@ -13,7 +13,7 @@ namespace todoapp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage()); // new todoapp.MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
