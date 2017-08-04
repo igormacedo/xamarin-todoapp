@@ -3,7 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="todoapp.SignUpPage">
     <ContentPage.Content>
-        <StackLayout>            
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Label Text="Gimme some info"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="Start"
+                       Font="Bold,20"/>
+
+                <Label Text="about You!"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="End"
+                       Font="50"/>
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="Center"
+                         Padding="20">
+                <Entry x:Name="name_entry"
+                       Placeholder="Name"/>
+                <Entry x:Name="phone_entry"
+                       Placeholder="Phone"/>
+                <Entry x:Name="email_entry"
+                       Placeholder="Email"/>
+                <Entry x:Name="password_entry"
+                       Placeholder="Password"/>
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="End" 
+                         Orientation="Horizontal" 
+                         HorizontalOptions="FillAndExpand"
+                         Padding="20">
+                <Button x:Name="submit_buttom"
+                        Text="Submit"
+                        MinimumWidthRequest="50"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="submit_buttom_Clicked"/>
+                
+                <Button x:Name="cancel_buttom"
+                        Text="Cancel"
+                        MinimumWidthRequest="50"
+                        HorizontalOptions="EndAndExpand"
+                        Clicked="cancel_buttom_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

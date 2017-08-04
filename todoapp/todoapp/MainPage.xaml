@@ -4,22 +4,24 @@
              xmlns:local="clr-namespace:todoapp"
              x:Class="todoapp.MainPage">
 
-    <StackLayout>
-        <Label Text="Oi mundo!"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               FontSize="Large"/>
-        
-        <Entry Placeholder="Nome"
-               VerticalOptions="Center"/>
-        
-        <Switch HorizontalOptions="Center"/>
-        
-        <Button Text="Ok"
-                BackgroundColor="Red"
-                Clicked="Button_Clicked"
-                />
-    
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="username_label" FontSize="Medium" />
+            <Label Text="you got in!"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Medium"/>
+        </StackLayout>
+
+        <Label Text="Welcome to my AEWSOME"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="Start"
+                       Font="Bold,20"/>
+
+        <Label Text="Xamarin App"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="End"
+                       Font="50"/>
     </StackLayout>
 
 </ContentPage>

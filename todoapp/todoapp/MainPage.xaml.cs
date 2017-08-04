@@ -12,11 +12,7 @@ namespace todoapp
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Alerta!", "Cuidado", "#foratemer!");
+            //username_label.Text = username;
         }
     }
 }
