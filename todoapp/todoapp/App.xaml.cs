@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using todoapp.Views;
 using Xamarin.Forms;
 
 namespace todoapp
@@ -15,7 +16,8 @@ namespace todoapp
             var loginPage = new LoginPage();
             loginPage.LoginSucceeded += HandleLoginSucceeded;
             loginPage.LoginFailed += HandleLoginFailed;
-            MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new AdicionarPage());
         }
 
         private void HandleLoginSucceeded(object sender, EventArgs e)
