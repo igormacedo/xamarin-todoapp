@@ -14,10 +14,10 @@ namespace todoapp
             InitializeComponent();
 
             var loginPage = new LoginPage();
-            loginPage.LoginSucceeded += HandleLoginSucceeded;
-            loginPage.LoginFailed += HandleLoginFailed;
+            //loginPage.BindingContext.LoginSucceeded += HandleLoginSucceeded;
+            //loginPage.BindingContext.LoginFailed += HandleLoginFailed;
             //MainPage = new NavigationPage(new LoginPage());
-            MainPage = new NavigationPage(new AdicionarPage());
+            MainPage = new NavigationPage(loginPage);
         }
 
         private void HandleLoginSucceeded(object sender, EventArgs e)

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="todoapp.LoginPage">
+             x:Class="todoapp.Views.LoginPage">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Start" Padding="20">
@@ -26,18 +26,20 @@
                        Placeholder="username"
                        WidthRequest="200"
                        VerticalOptions="Center"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       Text="{Binding username_entry, Mode=OneWayToSource}"/>
 
                 <Entry x:Name="password_entry"
                        Placeholder="password"
                        WidthRequest="200"
                        VerticalOptions="Center"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       Text="{Binding password_entry, Mode=OneWayToSource}"/>
 
                 <Button x:Name="login_button"
                         Text="Log In"
                         BackgroundColor="#1E88E5"
-                        Clicked="login_button_Clicked"
+                        Command="{Binding Login_buttonClicked}"
                         WidthRequest="200"/>
             </StackLayout>
 
@@ -51,7 +53,7 @@
                         BackgroundColor="#E3F2FD"
                         WidthRequest="200"
                         VerticalOptions="End"
-                        Clicked="signup_button_Clicked"/>
+                        Command="{Binding Signup_buttonClicked}"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

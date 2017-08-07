@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="todoapp.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Label Text="Gimme some info"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="Start"
+                       Font="Bold,20"/>
+
+                <Label Text="about You!"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="End"
+                       Font="50"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center"
+                         Padding="20">
+                <Entry x:Name="name_entry"
+                       Placeholder="Name"
+                       Text="{Binding name, Mode=OneWayToSource}"/>
+                <Entry x:Name="phone_entry"
+                       Placeholder="Phone"
+                       Text="{Binding phone, Mode=OneWayToSource}"/>
+                <Entry x:Name="email_entry"
+                       Placeholder="Email"
+                       Text="{Binding email, Mode=OneWayToSource}"/>
+                <Entry x:Name="password_entry"
+                       Placeholder="Password"
+                       Text="{Binding password, Mode=OneWayToSource}"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" 
+                         Orientation="Horizontal" 
+                         HorizontalOptions="FillAndExpand"
+                         Padding="20">
+                <Button x:Name="submit_buttom"
+                        Text="Submit"
+                        MinimumWidthRequest="50"
+                        HorizontalOptions="StartAndExpand"
+                        Command="{Binding Submit_buttonClicked}"/>
+
+                <Button x:Name="cancel_buttom"
+                        Text="Cancel"
+                        MinimumWidthRequest="50"
+                        HorizontalOptions="EndAndExpand"
+                        Command="{Binding Cancel_buttonClicked}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
